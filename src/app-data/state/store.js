@@ -1,5 +1,6 @@
-import {writable} from 'svelte/store';
+import { writable } from "svelte/store";
 
 export const view = writable({
-   input: false
-})
+   input: false,
+   list: ''
+});

@@ -1,7 +1,9 @@
 <script>
 	// @ts-nocheck
 
-	import { createEventDispatcher } from 'svelte';
+   import { createEventDispatcher } from 'svelte';
+   import Fa from 'svelte-fa';
+   import { faTrash } from '@fortawesome/free-solid-svg-icons';
 
 	export let title;
 	export let tasks;
@@ -21,13 +23,8 @@
 {#if tasks}
    <nav>
       <ul>
-         <li>
+         <li class="heading">
             {title ? title : ''}
-         </li>
-      </ul>
-      <ul>
-         <li hidden={!clearable}>
-            <button class="secondary outline" on:click={emitClear}>Clear</button>
          </li>
       </ul>
    </nav>
@@ -51,29 +48,44 @@
 			{/each}
 		</ul>
 	</section>
+   <button class="danger outline" on:click={emitClear} hidden={!clearable}>
+      <Fa icon={faTrash} /> Clear Completed
+   </button>
 {/if}
 
 <style>
-	h2 {
+	li.heading {
 		color: var(--secondary);
       margin-top: 0;
       margin-bottom: 1rem;
 	}
 
+   button.danger {
+      color: var(--danger);
+      border: thin solid var(--danger);
+   }
+
+   button.danger:hover {
+      color: var(--secondary);
+      border-color: var(--secondary)
+   }
+
    .tasks ul {
       display: flex;
       flex-direction: column;
       gap: 0.5em;
+      text-transform: capitalize;
    }
 
    .tasks label {
+      font-size: x-large;
       padding-bottom: 1em;
-      border-bottom: thin dashed var(--secondary);
       animation: slide-left 0.5s;
    }
 
 	.completed {
 		color: var(--secondary);
 		text-decoration: line-through;
+      font-style: italic;
 	}
 </style>

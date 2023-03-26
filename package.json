@@ -25,7 +25,9 @@
 	"dependencies": {
 		"@fortawesome/free-solid-svg-icons": "^6.3.0",
 		"@picocss/pico": "^1.5.7",
+		"@tauri-apps/api": "^1.2.0",
 		"dexie": "^3.2.3",
+		"lodash": "^4.17.21",
 		"svelte-fa": "^3.0.3"
 	}
 }

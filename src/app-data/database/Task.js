@@ -1,4 +1,6 @@
+//@ts-nocheck
 import Dexie, { liveQuery } from 'dexie';
+import { uniq } from 'lodash';
 
 class Task extends Dexie {
    constructor() {
