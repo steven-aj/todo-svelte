@@ -1,18 +1,15 @@
-# create-svelte
+# svelte-calculator
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+> **IN PROGRESS** This project is still under development.
 
-## Creating a project
+## Todo
+- [x] ~~Build layout~~
+- [x] ~~Implement modifier functions~~
+- [ ] Implement View logic
+- [ ] Implement operator logic
+- [ ] Calculate & render to View
 
-If you're seeing this, you've probably already done this step. Congrats!
-
-```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+***
 
 ## Developing
 
