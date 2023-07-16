@@ -1,13 +1,6 @@
-# svelte-calculator
+#Todo Svelte
 
-> **IN PROGRESS** This project is still under development.
-
-## Todo
-- [x] ~~Build layout~~
-- [x] ~~Implement modifier functions~~
-- [ ] Implement View logic
-- [ ] Implement operator logic
-- [ ] Calculate & render to View
+A minimalistic todo app in Svelte with toggling options between complete & incomplete lists.
 
 ***
 
